@@ -9,5 +9,11 @@ spring:
         metadata:
           version: 1.0.0
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 server:
   port: 18082

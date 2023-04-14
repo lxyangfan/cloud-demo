@@ -13,6 +13,7 @@
         <module>cloud-user-service</module>
         <module>cloud-item-service</module>
         <module>cloud-order-service</module>
+        <module>cloud-demo-common</module>
     </modules>
     <packaging>pom</packaging>
 

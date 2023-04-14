@@ -30,7 +30,8 @@ public class IndexController {
     @PostMapping("/orders")
     public OrderDTO createOrder() {
         UserDTO user = feignUserService.getUserById(1L);
-        log.info("User: {} is creating new order", user);
+        log.debug("User: {} is creating new order", user);
+        log.info("create new order");
         return OrderDTO.buildDummy();
     }
 
