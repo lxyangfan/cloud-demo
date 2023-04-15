@@ -1,8 +1,8 @@
 package com.frank.order.controller;
 
 import com.frank.order.model.dto.OrderDTO;
-import com.frank.order.service.FeignUserService;
-import com.frank.user.model.dto.UserDTO;
+import com.frank.user.api.FeignUserService;
+import com.frank.common.model.dto.UserDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

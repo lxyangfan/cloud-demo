@@ -1,6 +1,6 @@
 package com.frank.user.controller;
 
-import com.frank.user.model.dto.UserDTO;
+import com.frank.common.model.dto.UserDTO;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

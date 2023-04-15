@@ -1,4 +1,4 @@
-package com.frank.user.model.dto;
+package com.frank.common.model.dto;
 
 import lombok.Data;
 
