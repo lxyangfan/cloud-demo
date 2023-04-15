@@ -1,5 +1,6 @@
 package com.frank.user.controller;
 
+import com.frank.user.model.dto.UserDTO;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,8 +13,8 @@ public class UserController {
     }
 
     @GetMapping("/users/{id}")
-    public com.frank.user.model.dto.UserDTO getUser() {
-        return com.frank.user.model.dto.UserDTO.buildDummy();
+    public UserDTO getUser() {
+        return UserDTO.buildDummy();
     }
 
 }

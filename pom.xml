@@ -14,9 +14,14 @@
         <module>cloud-item-service</module>
         <module>cloud-order-service</module>
         <module>cloud-demo-common</module>
+        <module>cloud-demo-api</module>
     </modules>
     <packaging>pom</packaging>
 
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
 
 
 </project>
