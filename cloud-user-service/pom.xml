@@ -21,6 +21,12 @@
         </dependency>
 
         <dependency>
+            <groupId>com.frank</groupId>
+            <artifactId>cloud-demo-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
