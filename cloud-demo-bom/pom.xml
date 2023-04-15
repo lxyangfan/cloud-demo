@@ -15,8 +15,8 @@
     <groupId>com.frank</groupId>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <java.version>1.8</java.version>
         <spring-boot.version>2.7.0</spring-boot.version>
         <spring-cloud.version>2021.0.3</spring-cloud.version>
@@ -37,8 +37,6 @@
         <knife4j.version>3.0.3</knife4j.version>
         <nimbus-jose-jwt.version>9.23</nimbus-jose-jwt.version>
     </properties>
-
-
 
     <dependencyManagement>
         <dependencies>
