@@ -1,5 +1,6 @@
 package com.frank.order;
 
+import com.frank.item.api.FeignItemService;
 import com.frank.user.api.FeignUserService;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -9,9 +10,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication(exclude = {
         DataSourceAutoConfiguration.class
 })
-@EnableDiscoveryClient
 @EnableFeignClients(basePackageClasses = {
-        FeignUserService.class
+        FeignUserService.class,
+        FeignItemService.class
 })
 public class OrderApplication {
 

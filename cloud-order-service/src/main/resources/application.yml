@@ -1,14 +1,3 @@
-spring:
-  cloud:
-    nacos:
-      discovery:
-        server-addr: http://infra-internal:8848
-        # 引用bootstrap.yml中的spring.application.name
-        service: cloud-order-service
-        # 服务注册的元数据
-        metadata:
-          version: 1.0.0
-
 management:
   endpoints:
     web:
@@ -16,4 +5,4 @@ management:
         include: "*"
 
 server:
-  port: 18082
+  port: 8080
