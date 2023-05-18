@@ -15,6 +15,7 @@
         <module>cloud-order-service</module>
         <module>cloud-demo-common</module>
         <module>cloud-user-api</module>
+        <module>cloud-item-api</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -1,5 +1,7 @@
 package com.frank.order.controller;
 
+import com.frank.common.model.dto.ItemDTO;
+import com.frank.item.api.FeignItemService;
 import com.frank.order.model.dto.OrderDTO;
 import com.frank.user.api.FeignUserService;
 import com.frank.common.model.dto.UserDTO;
@@ -16,6 +18,9 @@ public class IndexController {
     @Autowired
     private FeignUserService feignUserService;
 
+    @Autowired
+    private FeignItemService feignItemService;
+
     @GetMapping("")
     public String index() {
         return "Hello World";
@@ -29,7 +34,9 @@ public class IndexController {
     @PostMapping("/orders")
     public OrderDTO createOrder() {
         UserDTO user = feignUserService.getUserById(1L);
-        log.debug("User: {} is creating new order", user);
+        ItemDTO item = feignItemService.getItemById(1L);
+        log.debug("User: {} is creating new order with item:{}", user, item);
+
         log.info("create new order");
         return OrderDTO.buildDummy();
     }
