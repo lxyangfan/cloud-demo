@@ -1,11 +1,12 @@
-package com.frank.order;
+package com.frank.item;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication(exclude = {
         DataSourceAutoConfiguration.class
+}, scanBasePackages = {
+        "com.frank.item"
 })
 public class ItemApplication {
 

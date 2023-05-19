@@ -1,10 +1,9 @@
-package com.frank.order;
+package com.frank.item;
 
 import com.frank.item.api.FeignItemService;
 import com.frank.user.api.FeignUserService;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication(exclude = {

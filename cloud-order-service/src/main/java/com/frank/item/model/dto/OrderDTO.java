@@ -1,4 +1,4 @@
-package com.frank.order.model.dto;
+package com.frank.item.model.dto;
 
 import lombok.Data;
 
