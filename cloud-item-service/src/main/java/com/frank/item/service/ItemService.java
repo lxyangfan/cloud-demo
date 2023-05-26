@@ -3,11 +3,15 @@ package com.frank.item.service;
 import com.frank.common.model.dto.ItemDTO;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
+@RefreshScope
 public class ItemService {
+
+    private double defaultItemPrice = 100.d;
 
     @CircuitBreaker(name = "getItem", fallbackMethod = "getItemFallback")
     public ItemDTO getItem(Long id) {
@@ -19,7 +23,7 @@ public class ItemService {
         return ItemDTO.builder()
                 .id(id)
                 .name("this is Real Item")
-                .price(100.d)
+                .price(defaultItemPrice)
                 .build();
     }
 

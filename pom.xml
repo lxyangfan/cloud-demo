@@ -16,6 +16,7 @@
         <module>cloud-demo-common</module>
         <module>cloud-user-api</module>
         <module>cloud-item-api</module>
+        <module>cloud-seckill-service</module>
     </modules>
     <packaging>pom</packaging>
 
